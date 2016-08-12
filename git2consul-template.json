@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "no_daemon": "true",
+  "repos" : [{
+  	"name" : "ProjectName",
+	"url" : "SrcUrl",
+	"support_tags": true,
+	"source_root": "RelativePathForServiceDesc",
+	"branches" : ["master"],
+	"hooks": [{
+		"type" : "polling",
+		"interval" : "1"
+    }]
+  }]
+}

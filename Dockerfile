@@ -1,4 +1,4 @@
-FROM mesos-master:5000/nodejs-base
+FROM registry.idc-chengdu.wanda.com:5000/nodejs-base:latest
 
 # Create app directory
 RUN mkdir -p /usr/src/app

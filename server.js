@@ -18,7 +18,7 @@ var os = require('os');
 var ifaces = os.networkInterfaces();
 
 var S = require('string');
-var req_body = "Hello world v2 !\n";
+var req_body = "Hello world v3 !\n";
 
 req_body = req_body + S('    The real server ip behind LB is \n\n');
 

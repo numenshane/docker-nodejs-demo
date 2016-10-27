@@ -2,6 +2,7 @@
   "id": "nodejs-demo-webserver",
   "cpus": 0.5,
   "mem": 64.0,
+  "disk": 10,
   "instances": 1,
   "container": {
     "type": "DOCKER",

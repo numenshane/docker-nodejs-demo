@@ -20,7 +20,7 @@ var ifaces = os.networkInterfaces();
 var S = require('string');
 var req_body = "Hello world v1 !\n";
 
-req_body = req_body + S('    The real server ip behind LB is \n\n');
+req_body = req_body + S('    The real server ip within container behind LB is \n\n');
 
 Object.keys(ifaces).forEach(function (ifname) {
   var alias = 0;

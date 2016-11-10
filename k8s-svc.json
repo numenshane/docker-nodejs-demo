@@ -2,7 +2,7 @@
     "kind": "Service",
     "apiVersion": "v1",
     "metadata": {
-        "name": "docker-nodejs",
+        "name": "docker-nodejs-demo",
         "namespace": "default",
         "labels": {"version": "prod"}
     },

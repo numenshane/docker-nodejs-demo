@@ -1,0 +1,45 @@
+{
+    "kind": "ReplicationController",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "docker-nodejs-demo",
+        "namespace": "default",
+        "labels": {
+            "app": "docker-nodejs-demo",
+            "version": "prod"
+        }
+    },
+    "spec": {
+        "replicas": 2,
+        "selector": {
+            "app": "docker-nodejs-demo",
+            "version": "prod"
+        },
+        "template": {
+            "metadata": {
+                "name": "docker-nodejs-demo",
+                "labels": {
+                    "app": "docker-nodejs-demo",
+                    "version": "prod"
+                }
+            },
+            "spec": {
+                "containers": [
+                    {
+                        "name": "docker-nodejs-demo",
+                        "image": "registry.idc-chengdu.wanda.com:5000/nodejs-demo:prod",
+			"ports": [{
+			    "containerPort": 8088,
+			    "protocol": "TCP"
+			}],
+                        "imagePullPolicy": "Always"
+                    }
+                ],
+                "restartPolicy": "Always",
+                "terminationGracePeriodSeconds": 30,
+                "dnsPolicy": "ClusterFirst",
+                "securityContext": {}
+            }
+        }
+    }
+}

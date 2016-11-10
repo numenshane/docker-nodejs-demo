@@ -1,0 +1,20 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "docker-nodejs",
+        "namespace": "default",
+        "labels": {"version": "v1"}
+    },
+    "spec": {
+        "ports": [{
+	    "protocol": "TCP",
+	    "port": 80,
+	    "targetPort": 8088
+	}],
+        "selector": {
+	    "app": "docker-nodejs-demo"
+	},
+	"type": "NodePort"
+    }
+}

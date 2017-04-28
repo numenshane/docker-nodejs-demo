@@ -1,4 +1,5 @@
-FROM registry.idc-chengdu.wanda.com:5000/nodejs-base:latest
+#FROM registry.idc-chengdu.wanda.com:5000/nodejs-base:latest
+FROM node:boron
 
 # Create app directory
 RUN mkdir -p /usr/src/app

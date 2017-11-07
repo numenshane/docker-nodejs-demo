@@ -27,7 +27,7 @@
                 "containers": [
                     {
                         "name": "docker-nodejs-demo",
-                        "image": "192.168.100.3:5000/docker-nodejs-demo:prod",
+                        "image": "10.60.196.164:5000/docker-nodejs-demo:prod",
 			"ports": [{
 			    "containerPort": 8088,
 			    "protocol": "TCP"
